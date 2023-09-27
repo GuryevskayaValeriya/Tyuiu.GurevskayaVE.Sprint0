@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tyuiu.GurevskayaVE.Sprint0.Task4.V0.Lib
+
+namespace Tyuiu.GurevskayaVE.Sprint0.Task5.V0.Lib
 {
     public class DataService
     {
@@ -22,7 +23,15 @@ namespace Tyuiu.GurevskayaVE.Sprint0.Task4.V0.Lib
         }
         public static double Division(int a, int b)
         {
-            return a / b;
+            if (b == 0)
+            {
+                Console.WriteLine("Переменная b = {0} на ноль делить нельзя", b);
+                return -1;
+            }
+            else
+            {
+                return a / b;
+            }
         }
     }
 }
